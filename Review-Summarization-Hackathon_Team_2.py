@@ -1,3 +1,4 @@
+# import pandas as pd
 import os
 from openai import AzureOpenAI
 from azure.core.credentials import AzureKeyCredential
