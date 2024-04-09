@@ -69,7 +69,7 @@ def get_conversational_chain():
 
 # Function to handle user queries using the existing vector store
 def query(user_question, vector_store_path="faiss_index_new"):
-    embeddings = AzureOpenAIEmbeddings(azure_deployment="Embedding-Model")
+    embeddings = AzureOpenAIEmbeddings(azure_deployment="Large_Embeddings")
     vector_store = FAISS.load_local(vector_store_path, embeddings, allow_dangerous_deserialization=True)
     chain = get_conversational_chain()
     docs = vector_store.similarity_search(user_question)
