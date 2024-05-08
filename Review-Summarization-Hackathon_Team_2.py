@@ -21,7 +21,7 @@ import streamlit as st
 
 
 # Setup environment variables for API keys and endpoint
-os.environ["AZURE_OPENAI_API_KEY"] = "a121608bfa654d7bbb4ff9718ecba306"
+os.environ["AZURE_OPENAI_API_KEY"] = "5568e3b7d15343598a40b198d9a61052"
 os.environ["AZURE_OPENAI_ENDPOINT"] = "https://hulk-openai.openai.azure.com/"
 
 # Function to read text from file
